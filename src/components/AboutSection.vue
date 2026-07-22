@@ -16,15 +16,18 @@ const stats = [
 
         <div class="mt-6 space-y-4 text-lg leading-relaxed text-muted">
           <p>
-            Sou desenvolvedor full-stack baseado em Parnaíba, Piauí. Trabalho na
-            Cajutec desde 2024, onde desenvolvo e mantenho sistemas de gestão
-            escolar usados por redes municipais de ensino em todo o Nordeste.
+            Sou desenvolvedor full-stack e moro em Parnaíba, no Piauí. Desde
+            2024 faço parte da Cajutec, onde ajudo a construir e manter os
+            sistemas de gestão escolar que rodam em redes municipais espalhadas
+            pelo Nordeste — é código meu sendo usado de verdade, todo dia, por
+            quem cuida da educação aqui na região.
           </p>
           <p>
-            Gosto de resolver problemas reais — do banco de dados ao deploy,
-            passando por decisões de arquitetura e onboarding de times. Quando
-            não estou codando, estou ajudando a montar o ambiente de alguém ou
-            pensando em como automatizar o próximo processo manual.
+            O que me move é resolver problema de verdade, do banco de dados ao
+            deploy. Curto trabalhar em time: puxar uma discussão de arquitetura,
+            dar aquela força pra quem tá começando, ajudar a montar o ambiente
+            de alguém. E se aparece um processo manual e repetitivo no caminho,
+            pode apostar que eu vou querer automatizar.
           </p>
         </div>
       </div>
