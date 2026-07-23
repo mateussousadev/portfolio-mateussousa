@@ -3,7 +3,7 @@
 const stats = [
   { value: '2+', label: 'anos de experiência' },
   { value: '4+', label: 'projetos em produção' },
-  { value: '3', label: 'municípios atendidos' },
+  { value: '4', label: 'estados atendidos' },
 ]
 </script>
 
@@ -18,9 +18,9 @@ const stats = [
           <p>
             Sou desenvolvedor full-stack e moro em Parnaíba, no Piauí. Desde
             2024 faço parte da Cajutec, onde ajudo a construir e manter os
-            sistemas de gestão escolar que rodam em redes municipais espalhadas
-            pelo Nordeste — é código meu sendo usado de verdade, todo dia, por
-            quem cuida da educação aqui na região.
+            sistemas de gestão escolar que já atendem redes de ensino no Piauí,
+            Maranhão, Ceará e em Brasília — é código meu sendo usado de verdade,
+            todo dia, por quem cuida da educação nesses lugares.
           </p>
           <p>
             O que me move é resolver problema de verdade, do banco de dados ao
