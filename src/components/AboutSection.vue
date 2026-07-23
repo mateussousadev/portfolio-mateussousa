@@ -2,7 +2,7 @@
 // Cards de números (destaques rápidos).
 const stats = [
   { value: '2+', label: 'anos de experiência' },
-  { value: '4+', label: 'projetos em produção' },
+  { value: '8+', label: 'projetos em produção' },
   { value: '4', label: 'estados atendidos' },
 ]
 </script>
