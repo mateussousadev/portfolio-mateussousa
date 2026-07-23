@@ -80,8 +80,8 @@ function irParaProjetos() {
 
         <!-- Subtítulo -->
         <p class="mt-6 text-lg text-muted">
-          PHP · Laravel · Vue.js · Python — construindo produtos para o setor
-          público e privado desde 2023.
+          PHP, Laravel, Vue e Python são meu dia a dia. Desde 2023 construindo
+          produtos que gente de verdade usa — no setor público e no privado.
         </p>
 
         <!-- Botões -->

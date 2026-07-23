@@ -18,9 +18,8 @@ const stats = [
           <p>
             Sou desenvolvedor full-stack e moro em Parnaíba, no Piauí. Desde
             2024 faço parte da Cajutec, onde ajudo a construir e manter os
-            sistemas de gestão escolar que já atendem redes de ensino no Piauí,
-            Maranhão, Ceará e em Brasília — é código meu sendo usado de verdade,
-            todo dia, por quem cuida da educação nesses lugares.
+            sistemas de gestão escolar que rodam em redes municipais espalhadas
+            pelo Nordeste. 
           </p>
           <p>
             O que me move é resolver problema de verdade, do banco de dados ao
