@@ -17,9 +17,15 @@ const stats = [
         <div class="mt-6 space-y-4 text-lg leading-relaxed text-muted">
           <p>
             Sou desenvolvedor full-stack e moro em Parnaíba, no Piauí. Desde
-            2024 faço parte da Cajutec, onde ajudo a construir e manter os
-            sistemas de gestão escolar que rodam em redes municipais espalhadas
-            pelo Nordeste. 
+            2024 faço parte da
+            <a
+              href="https://app.cajutec.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-medium text-accent transition-colors hover:text-accent-hover"
+              >Cajutec</a
+            >, onde ajudo a construir e manter os sistemas de gestão escolar que
+            rodam em redes municipais espalhadas pelo Nordeste.
           </p>
           <p>
             O que me move é resolver problema de verdade, do banco de dados ao

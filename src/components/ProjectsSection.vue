@@ -7,7 +7,7 @@ const projetos = [
     badge: 'Cajutec · 2024–presente',
     titulo: 'e-PUBLIC — Gestão Escolar Municipal',
     descricao:
-      'Plataforma SaaS de gestão escolar para redes municipais públicas. Desenvolvo e mantenho as funcionalidades que movem o dia a dia da escola — matrículas, notas, frequências, planejamentos e aulas — em municípios do Nordeste.',
+      'Plataforma de gestão escolar para redes municipais públicas. Desenvolvo e mantenho as funcionalidades que movem o dia a dia da escola — matrículas, notas, frequências, planejamentos e aulas — em municípios do Nordeste.',
     destaque:
       'Módulo de Pendências de Professor — dashboard quantitativo que cruza todos os módulos do sistema para que gestores acompanhem, num lugar só, o que cada professor ainda tem pra lançar.',
     tags: ['PHP 8.4', 'Laravel', 'Vue 2', 'Vuetify', 'MariaDB', 'Redis', 'Nginx', 'Multi-tenant'],
@@ -19,16 +19,35 @@ const projetos = [
     descricao:
       'A mesma base de gestão acadêmica, adaptada para escolas privadas. Mesmo núcleo do e-PUBLIC, ajustado às necessidades das instituições particulares.',
     destaque:
-      'Portal do aluno com boletos integrados via API do Sicoob — precisei aprender a integração do zero pra entregar os boletos direto pra quem estuda.',
+      'Fiz a integração do portal do aluno com a API do Sicoob para disponibilizar os boletos direto pra quem estuda — precisei aprender a integração do zero pra entregar.',
     tags: ['PHP 8.4', 'Laravel', 'Vue 2', 'Vuetify', 'MariaDB', 'Redis', 'Nginx', 'API Sicoob'],
     link: null,
   },
   {
-    badge: 'Freelance · 2025',
-    titulo: 'Plataforma Fiscal Municipal',
+    badge: 'Cajutec · interno',
+    titulo: 'Cajuawards',
     descricao:
-      'SaaS multi-tenant que automatiza a coleta de dados fiscais e de repasses de municípios brasileiros (CAUC/SICONFI, TransfeGov, FNS). Trocou um processo manual que levaria centenas de dias por scraping com anti-detecção avançada em portais do governo.',
+      'Sistema interno de premiações: cadastro de candidatos, votação pública por usuários cadastrados e uma tela de apresentação com slides e efeitos visuais pro evento ao vivo.',
     destaque: null,
+    tags: ['Laravel', 'Filament', 'Vue.js'],
+    link: null,
+  },
+  {
+    badge: 'Cajutec · interno',
+    titulo: 'Automações Internas',
+    descricao:
+      'Dois utilitários que economizam tempo do time: (1) um bot no Telegram que avisa automaticamente quando muda o status de protocolos no sistema de tickets; (2) um conversor de protocolos para Markdown via regex, pronto pra jogar direto nas IAs de programação.',
+    destaque: null,
+    tags: ['Laravel', 'Telegram Bot API', 'Python', 'Regex'],
+    link: null,
+  },
+  {
+    badge: 'Freelance · nov 2025 – abr 2026',
+    titulo: 'Plataforma de Consulta de Dados Públicos',
+    descricao:
+      'SaaS multi-tenant que centraliza a consulta de dados públicos federais dos municípios — instrumentos do TransfereGov, propostas e pagamentos do FNS (Saúde) e transferências especiais — sempre atualizados direto das fontes oficiais.',
+    destaque:
+      'Fui eu quem construiu do zero as integrações com os portais do governo (CAUC/SICONFI, TransfeGov, FNS), usando scraping com anti-detecção avançada. Trocou um processo manual que levaria centenas de dias por consultas automáticas.',
     tags: ['Laravel 12', 'Vue 3', 'Inertia.js', 'Python', 'FastAPI', 'Playwright', 'Multi-tenant', 'Web Scraping'],
     link: null,
   },
@@ -53,24 +72,6 @@ const projetos = [
     tags: ['Laravel', 'Angular', 'IA', 'Docker', 'Laradock'],
     link: null,
   },
-  {
-    badge: 'Cajutec · interno',
-    titulo: 'Cajuawards',
-    descricao:
-      'Sistema interno de premiações: cadastro de candidatos, votação pública por usuários cadastrados e uma tela de apresentação com slides e efeitos visuais pro evento ao vivo.',
-    destaque: null,
-    tags: ['Laravel', 'Filament', 'Vue.js'],
-    link: null,
-  },
-  {
-    badge: 'Cajutec · interno',
-    titulo: 'Automações Internas',
-    descricao:
-      'Dois utilitários que economizam tempo do time: (1) um bot no Telegram que avisa automaticamente quando muda o status de protocolos no sistema de tickets; (2) um conversor de protocolos para Markdown via regex, pronto pra jogar direto nas IAs de programação.',
-    destaque: null,
-    tags: ['Laravel', 'Telegram Bot API', 'Python', 'Regex'],
-    link: null,
-  },
 ]
 </script>
 
@@ -79,7 +80,7 @@ const projetos = [
     <!-- Cabeçalho -->
     <h2 class="text-3xl font-bold tracking-tight text-text">Projetos</h2>
     <p class="mt-3 max-w-2xl text-lg text-muted">
-      Sistemas que estão em produção — alguns abertos, outros censurados por
+      Sistemas que estão em produção — alguns abertos, outros sob sigilo por
       serem de clientes.
     </p>
 
