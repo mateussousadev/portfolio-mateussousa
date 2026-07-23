@@ -1,10 +1,12 @@
 <script setup>
-// FooterSection — placeholder temporário (etapa 2). Será implementado na etapa própria.
+// FooterSection — rodapé simples e centralizado.
 </script>
 
 <template>
-  <section class="mx-auto max-w-5xl px-6 py-20">
-    <p class="font-mono text-sm text-muted">&lt;FooterSection /&gt;</p>
-    <h2 class="mt-2 text-2xl font-bold text-text">Footer (placeholder)</h2>
-  </section>
+  <footer class="border-t border-border">
+    <div class="mx-auto max-w-5xl px-6 py-10 text-center text-sm text-muted">
+      <p>© 2025 Mateus Sousa · Parnaíba, Piauí</p>
+      <p class="mt-1">Feito com Vue 3 + Tailwind — deploy na AWS.</p>
+    </div>
+  </footer>
 </template>
