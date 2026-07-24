@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { onMounted, onBeforeUnmount } from 'vue'
 
 import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
@@ -13,26 +13,7 @@ import FooterSection from './components/FooterSection.vue'
 // Referência ao observer para conseguir desconectar no unmount.
 let observer = null
 
-// --- Parallax do fundo ---------------------------------------------------
-// scrollY guarda o deslocamento atual; o template usa esse valor pra empurrar
-// cada camada em velocidades diferentes. Atualizamos dentro de rAF pra não
-// travar o scroll.
-const scrollY = ref(0)
-let ticking = false
-
-function onScroll() {
-  if (ticking) return
-  ticking = true
-  requestAnimationFrame(() => {
-    scrollY.value = window.scrollY
-    ticking = false
-  })
-}
-
 onMounted(() => {
-  window.addEventListener('scroll', onScroll, { passive: true })
-
-
   // Seleciona todos os elementos marcados com [data-reveal].
   // Estado inicial (definido no template via classes Tailwind):
   //   opacity-0 translate-y-4 transition-all duration-500
@@ -68,34 +49,13 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   if (observer) observer.disconnect()
-  window.removeEventListener('scroll', onScroll)
 })
 </script>
 
 <template>
-  <div class="relative min-h-screen bg-bg text-text antialiased">
-    <!-- Fundo com textura + parallax: fixo atrás de todo o conteúdo.
-         Cada camada se move numa velocidade pra dar profundidade. -->
-    <div class="parallax-bg" aria-hidden="true">
-      <div
-        class="parallax-grid"
-        :style="{ transform: `translate3d(0, ${scrollY * 0.12}px, 0)` }"
-      ></div>
-      <div
-        class="parallax-glow parallax-glow--one"
-        :style="{ transform: `translate3d(0, ${scrollY * 0.28}px, 0)` }"
-      ></div>
-      <div
-        class="parallax-glow parallax-glow--two"
-        :style="{ transform: `translate3d(0, ${scrollY * -0.2}px, 0)` }"
-      ></div>
-      <div class="parallax-noise"></div>
-    </div>
-
-    <!-- Conteúdo acima do fundo -->
-    <div class="relative z-10">
-      <!-- NavBar: fixa no topo, não participa do fade-in -->
-      <NavBar />
+  <div class="min-h-screen bg-bg text-text antialiased">
+    <!-- NavBar: fixa no topo, não participa do fade-in -->
+    <NavBar />
 
     <main>
       <!-- Cada seção é envolvida por um wrapper [data-reveal] com o estado
@@ -136,9 +96,8 @@ onBeforeUnmount(() => {
       >
         <ContactSection />
       </div>
-      </main>
+    </main>
 
-      <FooterSection />
-    </div>
+    <FooterSection />
   </div>
 </template>
