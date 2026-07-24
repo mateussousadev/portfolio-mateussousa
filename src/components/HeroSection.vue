@@ -20,14 +20,9 @@ function irParaProjetos() {
 </script>
 
 <template>
-  <!-- Grade sutil de pontos só no hero (dot grid via CSS inline) -->
-  <section
-    class="hero-dot-grid border-b border-border"
-    style="
-      background-image: radial-gradient(circle, #30363d 1px, transparent 1px);
-      background-size: 24px 24px;
-    "
-  >
+  <!-- O fundo com textura + parallax é global (App.vue), então aqui a section
+       fica transparente e só marca a divisa inferior. -->
+  <section class="border-b border-border">
     <div
       class="mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 py-20 lg:flex-row lg:items-center lg:justify-between lg:py-28"
     >
@@ -118,6 +113,7 @@ function irParaProjetos() {
           </a>
         </div>
       </div>
+      
     </div>
   </section>
 </template>
