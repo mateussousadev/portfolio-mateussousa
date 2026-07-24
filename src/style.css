@@ -21,3 +21,72 @@ html {
   color: #e6edf3;
   font-family: 'Inter', sans-serif;
 }
+
+/* ------------------------------------------------------------------ */
+/* Fundo com textura + parallax                                        */
+/* Camada fixa atrás de todo o conteúdo. O JS do App.vue empurra cada  */
+/* sub-camada em velocidades diferentes conforme o scroll pra dar      */
+/* sensação de profundidade.                                           */
+/* ------------------------------------------------------------------ */
+.parallax-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  /* Base sutil que escurece nas bordas pra dar foco no conteúdo. */
+  background:
+    radial-gradient(120% 120% at 50% 0%, #10161f 0%, #0d1117 55%, #0a0d12 100%);
+}
+
+/* Grade de pontos que cobre bem mais que a viewport, pra folgar no
+   deslocamento do parallax sem revelar as bordas. */
+.parallax-grid {
+  position: absolute;
+  inset: -20% -20%;
+  background-image: radial-gradient(circle, #30363d 1px, transparent 1px);
+  background-size: 26px 26px;
+  opacity: 0.35;
+  will-change: transform;
+}
+
+/* Blobs de brilho — cores do tema, bem desfocados. */
+.parallax-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.18;
+  will-change: transform;
+}
+.parallax-glow--one {
+  top: -8%;
+  left: -6%;
+  width: 460px;
+  height: 460px;
+  background: #2f81f7; /* accent */
+}
+.parallax-glow--two {
+  top: 40%;
+  right: -10%;
+  width: 520px;
+  height: 520px;
+  background: #3fb950; /* green */
+  opacity: 0.12;
+}
+
+/* Ruído fino por cima pra quebrar o "digital liso" e dar textura. */
+.parallax-noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Acessibilidade: sem movimento pra quem pediu menos animação. */
+@media (prefers-reduced-motion: reduce) {
+  .parallax-grid,
+  .parallax-glow {
+    transform: none !important;
+  }
+}
