@@ -1,10 +1,10 @@
 <script setup>
 // Cards de números (destaques rápidos).
 const stats = [
-  { value: '2+', label: 'anos de experiência' },
-  { value: '8+', label: 'projetos em produção' },
-  { value: '4', label: 'estados atendidos' },
-]
+  { value: "2+", label: "anos de experiência" },
+  { value: "8+", label: "projetos em produção" },
+  { value: "4", label: "estados atendidos" },
+];
 </script>
 
 <template>
@@ -30,9 +30,8 @@ const stats = [
           <p>
             O que me move é resolver problema de verdade, do banco de dados ao
             deploy. Curto trabalhar em time: puxar uma discussão de arquitetura,
-            dar aquela força pra quem tá começando, ajudar a montar o ambiente
-            de alguém. E se aparece um processo manual e repetitivo no caminho,
-            pode apostar que eu vou querer automatizar.
+            dar aquela força pra quem tá começando. E procuro sempre formas de
+            automatizar tarefas e processos, se possível.
           </p>
         </div>
       </div>
