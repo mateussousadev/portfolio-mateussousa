@@ -9,7 +9,7 @@ const projetos = [
     descricao:
       'Plataforma de gestão escolar para redes municipais públicas. Desenvolvo e mantenho as funcionalidades que movem o dia a dia da escola — matrículas, notas, frequências, planejamentos e aulas — em municípios do Nordeste.',
     destaque:
-      'Módulo de Pendências de Professor — dashboard quantitativo que cruza todos os módulos do sistema para que gestores acompanhem, num lugar só, o que cada professor ainda tem pra lançar.',
+      'Módulo de Pendências de Professor — dashboard que consolida informações de todos os módulos do sistema, permitindo que gestores acompanhem, em um único painel, os lançamentos pendentes de cada professor da rede',
     tags: ['PHP 8.4', 'Laravel', 'Vue 2', 'Vuetify', 'MariaDB', 'Redis', 'Nginx', 'Multi-tenant'],
     link: null,
   },
